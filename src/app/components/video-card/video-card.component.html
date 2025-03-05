@@ -1,0 +1,9 @@
+<div class="video-card">
+  <img [src]="video?.thumbnail" [alt]="video?.title" class="thumbnail" />
+  <span class="duration">{{ video?.duration }}</span>
+  <div class="video-info">
+    <h3>{{ video?.title }}</h3>
+    <p>{{ video?.channel }}</p>
+    <p>{{ video?.views }} • {{ video?.timestamp }}</p>
+  </div>
+</div>

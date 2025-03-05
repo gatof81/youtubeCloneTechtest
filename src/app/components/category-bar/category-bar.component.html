@@ -1,0 +1,16 @@
+<div class="category-bar" [class.show-arrow]="showArrow()">
+  <div class="categories">
+    <button
+      class="category"
+      *ngFor="let category of categories"
+      [class.active]="activeCategory() === category"
+      (click)="setActive(category)"
+    >
+      {{ category }}
+    </button>
+  </div>
+
+  <button class="arrow-btn" *ngIf="showArrow()" (click)="scrollRight()">
+    ➡️
+  </button>
+</div>

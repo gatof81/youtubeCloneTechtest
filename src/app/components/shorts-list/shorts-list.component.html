@@ -1,0 +1,12 @@
+<div class="shorts-section">
+  <h2>Shorts</h2>
+  <div class="shorts-container">
+    <div class="short-card" *ngFor="let short of shorts">
+      <img [src]="short.thumbnail" [alt]="short.title" />
+      <div class="short-info">
+        <p class="title">{{ short.title }}</p>
+        <p class="views">{{ short.views }}</p>
+      </div>
+    </div>
+  </div>
+</div>

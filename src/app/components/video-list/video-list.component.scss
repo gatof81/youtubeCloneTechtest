@@ -1,0 +1,22 @@
+.video-grid {
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+  width: 100%;
+}
+
+app-video-card {
+  flex: 1;
+  min-width: 350px;
+  max-width: 600px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@media (max-width: 1050px) {
+  app-video-card:nth-child(n + 3) { display: none; }
+}
+
+@media (max-width: 750px) {
+  app-video-card:nth-child(n + 2) { display: none; }
+  app-video-card { max-width: 100%; }
+}

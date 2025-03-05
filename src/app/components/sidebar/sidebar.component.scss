@@ -1,0 +1,50 @@
+.sidebar {
+  width: 200px;
+  background: white;
+  height: 100vh;
+  padding: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.sidebar.collapsed .icon {
+  margin-right: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.text {
+  white-space: nowrap;
+}
+
+.sidebar.collapsed .text {
+  display: none;
+}
