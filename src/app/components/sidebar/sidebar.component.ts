@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class SidebarComponent {
   isCollapsed: WritableSignal<boolean> = signal(false);
+  activeSection = 'Home';
 
   toggleSidebar() {
     this.isCollapsed.set(!this.isCollapsed());

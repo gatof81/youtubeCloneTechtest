@@ -1,48 +1,74 @@
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  padding: 10px 20px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+
 }
 
-.menu-logo-container {
+.left-section {
   display: flex;
   align-items: center;
 }
 
 .menu-btn {
-  font-size: 24px;
-  background: none;
   border: none;
-  cursor: pointer;
+  background: none;
+  font-size: 25px;
 }
 
-.logo img {
-  max-width: 100px; /* Set the maximum width for the logo */
-  height: auto;
-  margin-left: 10px;
+.logo {
+  height: 60px;
 }
 
-.search-bar {
+.search-section {
   display: flex;
   align-items: center;
+  flex-grow: 1;
+  max-width: 600px;
 }
 
-.search-bar input {
-  padding: 5px;
-  font-size: 16px;
+.search-section input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  padding: 10px;
 }
 
-.search-bar button {
-  padding: 5px;
-  font-size: 16px;
+.search-btn {
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 4px 15px;
+  border-radius: 0 20px 20px 0;
   cursor: pointer;
 }
 
-.profile button {
-  padding: 5px 10px;
-  font-size: 16px;
+.mic-btn {
+  background: #ddd;
+  border-radius: 50px;
+  border: none;
+  margin-left: 10px;
   cursor: pointer;
+  padding: 5px 8px;
+}
+
+.right-section .sign-in-btn {
+  background: none;
+  border: 1px solid blue;
+  color: blue;
+  padding: 5px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  img {
+    width: 24px;
+    height: 24px;
+    padding-right: 5px;
+    filter: invert(31%) sepia(86%) saturate(1200%) hue-rotate(215deg) brightness(95%) contrast(110%);
+  }
 }

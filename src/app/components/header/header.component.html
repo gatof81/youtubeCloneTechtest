@@ -1,13 +1,23 @@
 <header class="header">
-  <button class="menu-btn" (click)="toggleSidebar()">☰</button>
-  <div class="logo">
-    <img src="assets/logo.png" alt="YouTube" />
+  <div class="left-section">
+    <button class="menu-btn" (click)="toggleSidebar()">☰</button>
+    <img src="assets/logo.png" alt="YouTube" class="logo" />
   </div>
-  <div class="search-bar">
+
+  <div class="search-section">
     <input type="text" placeholder="Search" />
-    <button>🔍</button>
+    <button class="search-btn">
+      <img src="assets/icons/search.svg" alt="Search" />
+    </button>
+    <button class="mic-btn">
+      <img src="assets/icons/mic.svg" alt="Mic" />
+    </button>
   </div>
-  <div class="profile">
-    <button>Sign in</button>
+
+  <div class="right-section">
+    <button class="sign-in-btn">
+      <img src="assets/icons/sign-in.svg" alt="Sign In" />
+      Sign In
+    </button>
   </div>
 </header>

@@ -1,3 +1,20 @@
 <div class="video-grid">
-  <app-video-card *ngFor="let video of videos" [video]="video"></app-video-card>
+  <!-- First row: Main Video List -->
+  <div class="videos first-row">
+    <app-video-card
+      *ngFor="let video of visibleVideos()"
+      [video]="video"
+    ></app-video-card>
+  </div>
+
+  <!-- Second row: Shorts -->
+  <app-shorts-list class="shorts-row"></app-shorts-list>
+
+  <!-- Third row: Overflow Videos (Reversed) -->
+  <div class="videos overflow-row">
+    <app-video-card
+      *ngFor="let video of overflowVideos().reverse()"
+      [video]="video"
+    ></app-video-card>
+  </div>
 </div>

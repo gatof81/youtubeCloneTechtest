@@ -1,5 +1,9 @@
 <div class="shorts-section">
-  <h2>Shorts</h2>
+  <div class="title">
+    <img src="assets/icons/shorts.svg" class="icon" />
+    <h2>Shorts</h2>
+  </div>
+
   <div class="shorts-container">
     <div class="short-card" *ngFor="let short of shorts">
       <img [src]="short.thumbnail" [alt]="short.title" />
